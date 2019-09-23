@@ -36,7 +36,9 @@ export const OrderList = async (req, res) => {
 
 export const OrderInsert = async (req, res) => {
   try {
-    res.send(await Order.create(req.body));
+    const result = await Order.create(req.body);
+    console.log(result);
+    res.send(result);
   } catch (e) {
     console.log(e);
   }
