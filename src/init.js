@@ -1,9 +1,8 @@
- import './db';
- import app from './server';
+import "./db";
+import app from "./server";
 
-import dotenv from 'dotenv';
-dotenv.config();
+import config from "./config";
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || config.PORT;
 
-app.listen(PORT, () => console.log('✅ open lunch server!!'))
+app.listen(PORT, () => console.log("✅ open lunch server!!"));
