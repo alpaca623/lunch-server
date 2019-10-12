@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      out_file: '/data/logs/pm2/kdax-out.log',
-      error_file: '/data/logs/pm2/kdax-error.log',
+      out_file: '/home/ubuntu/log/pm2/react-server-out.log',
+      error_file: '/home/ubuntu/log/pm2/react-server-error.log',
       name: 'lunch_server',
       script: './src/init.js',
       watch: false,
