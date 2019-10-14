@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node src/init.js"
+    "start": "nodemon --exec babel-node src/init.js",
+    "compile": "babel src --out-dir dist --delete-dir-on-start --source-maps inline --copy-files"
   },
   "keywords": [],
   "author": "",

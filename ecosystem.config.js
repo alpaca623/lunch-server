@@ -4,7 +4,7 @@ module.exports = {
       out_file: '/home/ubuntu/log/pm2/react-server-out.log',
       error_file: '/home/ubuntu/log/pm2/react-server-error.log',
       name: 'lunch_server',
-      script: './src/init.js',
+      script: './dist/init.js',
       watch: false,
       log_date_format: 'YYYY-MM-DDTHH:mm:ss:SSSZ',
       wait_ready: true,
